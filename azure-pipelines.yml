@@ -1,4 +1,8 @@
 pool:
   vmImage: 'Ubuntu-16.04'
 stages:
-- stage: Build  
+- stage: Build
+  jobs:
+  - job: BuildJob
+    steps:
+    - script: echo Building!  
